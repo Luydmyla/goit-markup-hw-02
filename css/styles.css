@@ -1,11 +1,99 @@
+:root {
+  --primary-text-color: #757575;
+  --title-text-color: #212121;
+  --accent-color: #2196f3;
+  --second-background-color: #f5f4fa;
+  --second-text-color: #ffffff;
+}
 body {
   font-family: Roboto;
-  color: #212121;
-  background-color: violet;
+  color: var(--primary-text-color);
+  background-color: #ffffff;
+}
+/* черный цвет лого #000000 */
+/* цвет основного текста  #757575 */
+/* цвет вторичного текста #212121   */
+/* цвет акцента #2196F3  */
+/* цвет адресса rgba(255, 255, 255, 0,6) */
+/* белый цвет #FFFFFF */
+/* цвет фона героя #2F303A */
+
+/* логотип в хедере*/
+.logo {
+  color: #000000;
+}
+.logo:hover,
+.logo:focus {
+  color: var(--accent-color);
+}
+.logo-web {
+  color: #2196f3;
+}
+/* стили для списков */
+.list {
+  list-style: none;
 }
 
+/* site-navig */
+.site-navig {
+  color: var(--title-text-color);
+}
+.site-navig :hover,
+.site-navig :focus {
+  color: var(--accent-color);
+}
+.auth-navig .link:hover,
+.auth-navig .link:focus {
+  color: var(--accent-color);
+}
+/* hero */
+.hero {
+  background-color: #2f303a;
+  color: var(--second-text-color);
+}
+/* кнопка заказать услугу */
+button {
+  background-color: var(--accent-color);
+  color: var(--second-text-color);
+}
 button:hover,
 button:focus {
-  background-color: #0000ff;
-  color: #ffffff;
+  background-color: #188ce8;
+  color: var(--second-text-color);
+}
+
+/* sections */
+.sections {
+}
+.sections-title {
+  color: var(--title-text-color);
+}
+/* футер */
+.footer {
+  background-color: #2f303a;
+}
+/* логотип ф футере */
+.logo-footer {
+  color: var(--second-text-color);
+}
+.logo-footer:hover,
+.logo-footer:focus {
+  color: var(--accent-color);
+}
+
+/* адресс ссылка  */
+.adress-link {
+  color: var(--second-background-color);
+}
+.adress-link:hover,
+.adress-link:focus {
+  color: var(--accent-color);
+}
+/* ауторизация в футере */
+.link {
+  color: rgba(255, 255, 255, 0.6);
+}
+.footer-navig .link:hover,
+.footer-navig .link:focus {
+  color: var(--accent-color);
 }
